@@ -11,7 +11,7 @@ $ brew install multipass
 This will create and launch an instance called primary. Multipass by default will mount your `$HOME` directory if the instance is named `primary`.
 
 ```bash
-$ ./create-and-init.sh
+$ ./create-and-init-docker.sh
 + MEM=2048M
 + CPUS=2
 + DISK=20G

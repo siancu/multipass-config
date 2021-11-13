@@ -6,7 +6,7 @@ CPUS=2
 DISK=20G
 
 echo "Creating and launching instance"
-multipass launch --name primary -c $CPUS -m $MEM -d $DISK --cloud-init cloud-init.yml
+multipass launch --name primary -c $CPUS -m $MEM -d $DISK --cloud-init cloud-init-docker.yml
 
 echo "Mounting $HOME into remote instance: primary"
 multipass mount ${HOME} primary:/Users/${USER}
